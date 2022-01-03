@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo{
+  color: #0077b6;
+  
+}
+a {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0077b6;
+  
+}
+
+.logo {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+  background:#ffea00;
+  height: 15vh;
+}
+.banner-header{
+  position:relative;
+
+}
+
+.banner
+{
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 200px;  
+  
+  
+}
+
+.banner h1
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content:left;
+  margin-left:100px;
+  font-family: 'Exo 2', sans-serif;
+
+}
+.banner h2
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content:left;
+  margin-left:100px;
+  line-height: 75px;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.banner a
+{
+  width: 255px;
+  display:flex;
+  justify-content: center;
+  text-align:center;
+  margin-left:100px;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  font-family: 'Overpass', sans-serif;
+  border-radius: 10px;
+  color: black;
+  background:#ffea00;
+  font-weight: 600;
+
+
+}
+.banner a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+
+.video video{
+  width: 100%;
+  height:85vh;
+  object-fit: cover;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background:#0077b6;;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 15vh;
+    right: 0;
+    width: 100vw;
+    height: 30vh;
+    background:#ffea00;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index:100;
+   
+    
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity:0;
+  }
+  .mobile-menu {
+    display: block;
+    
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+  
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+body{
+background:#247ba0;
+  
+}
+
+.polaroid{
+	background:white;
+	padding: 15px 15px 15px;
+}
+.photo{
+	width:100%;
+	height: 250px;
+	object-fit: cover;
+}
+.container{
+	margin: auto;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+	row-gap: 65px;
+  column-gap: 20px;
+	justify-content: center;
+	padding: 70px;
+
+}
+.caption{
+  margin:15px;
+}
+.caption h2{
+  margin: 12px;
+  font-size: 1.5rem;
+  color: #0077b6;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  text-transform: uppercase;
+}
+.caption p{
+  margin: 12px;
+  text-align:justify;
+  font-family: 'Varela', sans-serif;
+  text-transform:capitalize;
+}
+.btn{
+	transition: box-shadow .3s;
+	text-align: center;
+}
+button{
+  background:#ffea00;
+	width:100px;
+	height: 40px;
+	color:black;
+	font-weight: bolder;
+	padding: 10px;
+	margin: 15px;
+	border-radius:5px;
+	border:none;
+	cursor: pointer;
+	
+}
+button:hover{
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.titulo{
+  padding: 50px;
+  text-align: center;
+}
+.titulo h2{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: 'Varela Round', sans-serif;
+  font-weight:300;
+  color: #8ecae6;
+  letter-spacing: 5px;
+  margin: 20px;
+}
+.titulo p{
+  font-size: 1.5rem;
+  font-family: 'Varela', sans-serif;
+  color:#dee2e6;
+  font-weight: 800;
+  line-height: 25px;
+  margin: 10px;
+}
+.formulario{
+  text-align: center;
+}
+input[type="search"]{
+  width: 40%;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin:10px 0;
+  outline: none;
+  padding: 12px;
+  box-sizing: border-box;
+ 
+}
+input[type="submit"]{
+  background:#ffea00;
+	width:100px;
+	height: 40px;
+	color:black;
+	font-weight: bolder;
+	padding: 10px;
+	margin: 15px;
+	border-radius:5px;
+	border:none;
+	cursor: pointer;
+ }
+ input[type="search"]:focus{
+  
+  border: 2px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+.ofertas{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin: -15px 0 30px 0;
+}
+.ofertas h1{
+  font-size: 2.5rem;
+  font-family: 'Varela Round', sans-serif;
+  font-weight:300;
+  color:#dee2e6;
+  letter-spacing: 5px;
+  margin: 5px;
+}
+.ofertas p{
+  font-size: 1rem;
+  font-family: 'Varela', sans-serif;
+  color:#dee2e6;
+  font-weight: 800;
+  line-height: 25px;
+  margin: 10px;
+}
+input[type="text"]{
+  width: 20%;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin:10px 5px;
+  outline: none;
+  padding: 12px;
+  box-sizing: border-box;
+ 
+}
+input[type="button"]{
+  background:#ffea00;
+	width:100px;
+	height: 40px;
+	color:black;
+	font-weight: bolder;
+	padding: 10px;
+	margin: 15px;
+	border-radius:5px;
+	border:none;
+	cursor: pointer;
+ }
+ input[type="text"]:focus{
+  
+  border: 2px solid dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
+}
+.redessociais{
+  text-align: center;
+}
+.redessociais h2{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: 'Varela', sans-serif;
+  color:#dee2e6;
+  font-weight: 800;
+  line-height: 25px;
+  margin: 10px;
+}
+.redessociais img{
+  margin: 20px 10px 20px 10px;
+  cursor: pointer;
+  width: 35px;
+}
+
+footer{
+  
+  background:#ffea00;
+  text-align: center;
+}
+footer p{
+  padding: 36px;
+  font-size:1rem;
+  font-family: 'Varela Round', sans-serif;
+  
+}
