@@ -1,0 +1,26 @@
+@media(min-width:375px) and (max-width:950px){
+    .banner{
+        top: 145px;
+    }
+    .banner h1{
+        font-size:3.5rem;
+    }
+    .banner h2{
+        font-size: 2.5rem;
+    }
+    input[type="search"]{
+        width: 75%;
+    }
+      input[type="submit"]{
+         width:170px;
+          
+    }
+    input[type="text"]{
+        width: 75%;
+    }
+    input[type="button"]{
+        background:#ffea00;
+          width:170px;
+          
+       }
+}
