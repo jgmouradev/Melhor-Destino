@@ -1,12 +1,78 @@
-@media(min-width:375px) and (max-width:950px){
+/***********************************Smartphone Layout ****************************************************/
+@media(min-width:320px) and (max-width:374px){
+    .logo{
+        font-size:1rem;
+        letter-spacing: 5px;
+    }
+    
     .banner{
-        top: 145px;
+        top: 75px;
+        margin-left:-45px;
+    }
+    .banner a{
+        width: 225px;
+        margin-left: 60px;
     }
     .banner h1{
-        font-size:3.5rem;
+        font-size:2rem;
+        
+    }
+    .banner h2{
+        font-size: 2rem;
+    }
+    .video video{
+        height: 65vh;
+    }
+    .titulo h2{
+        font-size: 2rem;
+        margin-bottom: 45px;
+    }
+    input[type="search"]{
+        width: 75%;
+    }
+      input[type="submit"]{
+         width:170px;
+          
+    }
+    input[type="text"]{
+        width: 75%;
+    }
+    input[type="button"]{
+        background:#ffea00;
+          width:170px;
+          
+       } 
+}
+
+/***********************************Medium Layout ****************************************************/
+
+@media(min-width:375px)and (max-width:768px){
+    .logo{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .banner{
+        top: 75px;
+        margin-left: -55px;
+    }
+    .banner a{
+        width: 165px;
+        
+    }
+    .banner h1{
+        font-size:2rem;
+        left:-35px;
     }
     .banner h2{
         font-size: 2.5rem;
+    }
+    .video video{
+        height: 45vh;
+    }
+    .titulo h2{
+        font-size: 2rem;
+        margin-bottom: 45px;
     }
     input[type="search"]{
         width: 75%;
@@ -23,4 +89,24 @@
           width:170px;
           
        }
+}
+
+/***********************************Tablet Layout ****************************************************/
+@media(min-width:769px)and (max-width:1024px){
+    .logo{
+        font-size: 2rem;
+        letter-spacing: 5px;
+    }
+    
+    .banner{
+        top: 145px;
+    }
+    .banner a{
+        width: 165px;
+        
+    }
+    .video video{
+        height: 85vh;
+    }
+    
 }
