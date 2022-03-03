@@ -1,12 +1,12 @@
 /***********************************Smartphone Layout ****************************************************/
-@media(min-width:320px) and (max-width:374px){
+@media(min-width:320px) and (max-width:580px){
     .logo{
         font-size:1rem;
         letter-spacing: 5px;
     }
     
     .banner{
-        top: 75px;
+        top: 125px;
         margin-left:-45px;
     }
     .banner a{
@@ -21,7 +21,7 @@
         font-size: 2rem;
     }
     .video video{
-        height: 65vh;
+        height: 85vh;
     }
     .titulo h2{
         font-size: 2rem;
@@ -43,32 +43,37 @@
           
        } 
 }
+@media(min-width:380px){
+    .logo{
+        font-size: 1.5rem;
+    }
+}
 
 /***********************************Medium Layout ****************************************************/
 
-@media(min-width:375px)and (max-width:768px){
+@media(min-width:581px)and (max-width:768px){
     .logo{
         font-size: 1.5rem;
         letter-spacing: 2px;
     }
     
     .banner{
-        top: 75px;
+        top: 105px;
         margin-left: -55px;
     }
     .banner a{
-        width: 165px;
+        width: 220px;
         
     }
     .banner h1{
-        font-size:2rem;
+        font-size:3rem;
         left:-35px;
     }
     .banner h2{
         font-size: 2.5rem;
     }
     .video video{
-        height: 45vh;
+        height: 85vh;
     }
     .titulo h2{
         font-size: 2rem;
@@ -90,23 +95,48 @@
           
        }
 }
+@media(min-width:768px){
+    .logo{
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+    .banner{
+        top: 165px;
+    }
+    .video video{
+        height: 55vh;
+    }
+}
 
-/***********************************Tablet Layout ****************************************************/
-@media(min-width:769px)and (max-width:1024px){
+/***********************************Tablet and Larger Layout ****************************************************/
+@media(min-width:769px)and (max-width:1400px){
     .logo{
         font-size: 2rem;
         letter-spacing: 5px;
     }
     
     .banner{
-        top: 145px;
+        top: 150px;
+        margin-left: -55px;
     }
     .banner a{
         width: 165px;
         
     }
+    .banner h1{
+        font-size:4rem;
+        left:-35px;
+    }
+    .banner h2{
+        font-size:3rem;
+    }
     .video video{
         height: 85vh;
     }
     
+}
+@media(min-width:1024px){
+    .logo{
+        margin-left: 30px;
+    }
 }
