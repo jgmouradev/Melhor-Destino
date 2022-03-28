@@ -140,9 +140,7 @@
     .banner{
         top: 165px;
     }
-    .video video{
-        height: 55vh;
-    }
+  
 }
 
 /***********************************Tablet and Larger Layout ****************************************************/
@@ -175,5 +173,14 @@
 @media(min-width:1024px){
     .logo{
         margin-left: 30px;
+    }
+}
+
+@media(min-width:1401px) and (max-width:2560px){
+    .video video {
+        height: 100vh;
+    }
+    .banner{
+        top: 320px;
     }
 }
